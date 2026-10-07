@@ -2,8 +2,6 @@
 
 A small app that counts feed pellets in fish feeding videos. You pick a video (or a webcam), and it shows the stream with every pellet boxed and numbered, plus a live count next to it.
 
-![demo](docs/demo.mp4)
-
 The model is a YOLO detector trained on pellets. The interface is a Flutter app, and it talks to a Flask backend over Socket.IO, which does the detection and tracking and sends the frames back.
 
 I started this in 2024 and reorganised it in 2026: the backend is split into modules, the app has a proper dashboard, and the settings are no longer hardcoded.
